@@ -1,5 +1,3 @@
-import React from 'react';
-import './App.css';
 
 class Game {
   state = {
@@ -16,3 +14,4 @@ render() ;{
     </div>
   );
 }
+ export default Game;
