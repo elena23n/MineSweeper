@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class Game {
@@ -9,4 +8,11 @@ class Game {
     mines: 10}
 }
 
-export default Game;
+render() ;{
+  const { height, width, mines } = this.state;
+  return (
+    <div className="game">
+      <Board height={height} width={width} mines={mines} />
+    </div>
+  );
+}
